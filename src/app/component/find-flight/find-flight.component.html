@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>find Fligts</title>
+
+    </head>
+    <body>
+        <h2>find Fligts</h2>
+        <form  #findFlightForm="ngForm"  (ngSubmit)="onSubmit(findFlightForm.value)">
+            From : <input type="text" [(ngModel)]="from" name="from"/>
+            To : <input type="text" [(ngModel)]="to" name="to"/>
+            Departure Date: <input type="text"[(ngModel)]="departuredate" name="departuredate"/>
+            <input type="submit" value="search"/>
+
+
+        </form>
+
+    </body>
+</html>
+<router-outlet></router-outlet>
